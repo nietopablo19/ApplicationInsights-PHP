@@ -10,7 +10,7 @@ class Telemetry_Client_Test extends TestCase
 {
     private $_telemetryClient;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->_telemetryClient = new \ApplicationInsights\Telemetry_Client();
 
@@ -322,7 +322,7 @@ class Telemetry_Client_Test extends TestCase
                     array_filter($exception['parsedStack'], function($e) use($maxLevel){
                         return $e['level'] < $maxLevel;
                     });
-                
+
                 $exception['parsedStack'] = array_combine(range(0, count($exception['parsedStack'])-1), $exception['parsedStack']);
 
                 foreach ($exception['parsedStack'] as &$stackFrame)

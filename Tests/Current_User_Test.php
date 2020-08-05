@@ -10,7 +10,7 @@ class Current_User_Test extends TestCase
 {
     private $userId;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->userId = \ApplicationInsights\Channel\Contracts\Utils::returnGuid();
         Utils::setUserCookie($this->userId);
@@ -24,7 +24,7 @@ class Current_User_Test extends TestCase
     /**
      * Verifies the object is constructed properly.
      */
-    public function testConstructor()
+    public function testConstructor(): void
     {
         $currentUser = new \ApplicationInsights\Current_User();
 
