@@ -1,9 +1,9 @@
 {
-    "name": "microsoft/application-insights",
+    "name": "yesdevs/application-insights",
     "description": "This project extends the Application Insights API surface to support PHP.",
     "type": "library",
     "keywords": ["log","logging","telemetry","insights","monitoring"],
-    "homepage": "https://github.com/Microsoft/ApplicationInsights-PHP",
+    "homepage": "https://github.com/yesdevs/ApplicationInsights-PHP/",
     "license": "MIT",
     "require": {
         "php": ">=5.4.0",
